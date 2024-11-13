@@ -19,4 +19,4 @@ person.call(hasan,"Hello","!");
 person.call(ali,"Hello","!");
 let alijon= person.bind(ali,"Hello","!");
 
-console.log(alijon);
+console.log(alijon());

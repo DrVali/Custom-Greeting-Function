@@ -1,4 +1,4 @@
-const printInfo = function (hi,greeting){
+const person = function (hi,greeting){
  
   console.log(`${hi} ${greeting}  my name is ${this.firstName} ${this.Lastname}, I Am ${this.age} years old`)
 
@@ -8,15 +8,13 @@ const ali ={
   Lastname:"ahmadi",
   age:32,
 };
-//const printInfo=ali.printInfo;
+
 
 const hasan= {
   firstName:"hasan",
   Lastname:"rezayee",
   age: 64,
 };
-printInfo.call(hasan,"Hello","!");
-printInfo.call(ali,"Hello","!");
-//const printAliInfo=printInfo.blind(ali);
-
-//printInfo()
+person.call(hasan,"Hello","!");
+person.call(ali,"Hello","!");
+person.bind(ali);

@@ -1,6 +1,6 @@
-const person = function (hi,greeting){
+const person = function (hi,ohmygod){
  
-  console.log(`${hi} ${greeting}  my name is ${this.firstName} ${this.Lastname}, I Am ${this.age} years old`)
+  console.log(`${hi} ${ohmygod}  my name is ${this.firstName} ${this.Lastname}, I Am ${this.age} years old`)
 
 }
 const ali ={
@@ -17,4 +17,6 @@ const hasan= {
 };
 person.call(hasan,"Hello","!");
 person.call(ali,"Hello","!");
-person.bind(ali);
+let alijon= person.bind(ali,"Hello","!");
+
+console.log(alijon);
